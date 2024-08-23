@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-commit()
-{
-git commit -m "$*"
+commit() {
+	git commit -m "$*"
 }
