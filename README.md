@@ -1,7 +1,7 @@
-##This readme file contains all the components of the smart money app.
+## This readme file contains all the components of the smart money app.
 
-#FRAMEWORK USED:
+# FRAMEWORK USED:
 
-#Kivy -
+# Kivy -
 
-#KivyMD -
+# KivyMD -
