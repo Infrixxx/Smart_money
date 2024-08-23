@@ -1,1 +1,1 @@
-##commit.sh - is a file that contains the git commit code, to improve efficiency.
+##This readme file contains all the components of the smart money app.
