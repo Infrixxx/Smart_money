@@ -43,7 +43,7 @@ class InsuranceScreen(Screen):
         ]
 
         for insurance in insurance_data:
-            button = Button(text=insurance["name"], size_hint_y=None, height=20, background_color=(0, 0.5, 0, 1))
+            button = Button(text=insurance["name"], size_hint_y=None, height=37, background_color=(0, 0.5, 0, 1))
             button.bind(on_press=lambda instance, url=insurance["url"]: self.open_link(url))
             self.insurance_layout.add_widget(button)
 
