@@ -9,6 +9,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.graphics import Color, Rectangle
 import requests
 import geocoder
+from kivy.uix.image import Image
 
 class FinancialAdvisorsScreen(Screen):
     def __init__(self, **kwargs):
@@ -17,6 +18,9 @@ class FinancialAdvisorsScreen(Screen):
         self.api_key = 'AIzaSyCy2mp7UJwjFZNguibzz6vF5cC7GwM2Sg0'
 
         main_layout = FloatLayout()
+
+        logo = Image(source='smart_money.png', size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5, 'top': 0.65})
+        main_layout.add_widget(logo)
 
         with main_layout.canvas.before:
             Color(1, 1, 1, 1)
@@ -103,6 +107,7 @@ class FinancialAdvisorsScreen(Screen):
 
         except requests.RequestException as e:
             self.message_label.text = f"Error: {str(e)}"
+            
 
     def go_back(self, instance):
         self.manager.current = 'welcome'
