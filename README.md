@@ -1,9 +1,10 @@
-Here’s the updated README content, including the new files and details for `insurance.py`, `budget.py`, `investment_platforms.py`, and `financial_advisors.py`:
+Here’s the updated README with the image and updated content:
 
 ---
 
-# Smart Money App README
-**Created by BC Rachoshi**
+# Smart Money
+![Smart Money Logo](path/to/your/logo.png)  
+*Be smart with your money*
 
 ## Overview
 This Kivy-based application offers a dynamic user interface with multiple screens, each providing different functionalities related to personal finance. Screens include options for budget management, finding financial advisors, discovering investment platforms, and accessing insurance information.
