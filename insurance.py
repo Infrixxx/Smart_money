@@ -22,8 +22,8 @@ class InsuranceScreen(Screen):
         logo = Image(source='smart_money.png', size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5, 'top': 0.95})
         main_layout.add_widget(logo)
 
-        title_label = Label(text="Insurance Options", size_hint=(0.9, 0.1), pos_hint={'center_x': 0.5, 'top': 0.85}, font_size=24)
-        main_layout.add_widget(title_label)
+        #title_label = Label(text="Insurance Options", size_hint=(0.9, 0.1), pos_hint={'center_x': 0.5, 'top': 0.85}, font_size=24)
+        #main_layout.add_widget(title_label)
 
         scroll_view = ScrollView(size_hint=(0.9, 0.6), pos_hint={'center_x': 0.5, 'top': 0.7})
         self.insurance_layout = GridLayout(cols=1, spacing=10, size_hint_y=None)
@@ -43,7 +43,7 @@ class InsuranceScreen(Screen):
         ]
 
         for insurance in insurance_data:
-            button = Button(text=insurance["name"], size_hint_y=None, height=39, background_color=(0, 0.5, 0, 1))
+            button = Button(text=insurance["name"], size_hint_y=None, height=20, background_color=(0, 0.5, 0, 1))
             button.bind(on_press=lambda instance, url=insurance["url"]: self.open_link(url))
             self.insurance_layout.add_widget(button)
 
