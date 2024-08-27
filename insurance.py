@@ -2,10 +2,10 @@ from kivy.uix.screenmanager import Screen
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.label import Label
 from kivy.uix.button import Button
-from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.gridlayout import GridLayout
 from kivy.graphics import Color, Rectangle
+from kivy.uix.image import Image
 import webbrowser
 
 class InsuranceScreen(Screen):
@@ -19,10 +19,13 @@ class InsuranceScreen(Screen):
             self.bg_rect = Rectangle(size=main_layout.size, pos=main_layout.pos)
             main_layout.bind(size=self._update_bg_rect, pos=self._update_bg_rect)
 
-        title_label = Label(text="Insurance Options", size_hint=(0.9, 0.1), pos_hint={'center_x': 0.5, 'top': 0.95}, font_size=24)
+        logo = Image(source='smart_money.png', size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5, 'top': 0.95})
+        main_layout.add_widget(logo)
+
+        title_label = Label(text="Insurance Options", size_hint=(0.9, 0.1), pos_hint={'center_x': 0.5, 'top': 0.85}, font_size=24)
         main_layout.add_widget(title_label)
 
-        scroll_view = ScrollView(size_hint=(0.9, 0.65), pos_hint={'center_x': 0.5, 'top': 0.7})
+        scroll_view = ScrollView(size_hint=(0.9, 0.6), pos_hint={'center_x': 0.5, 'top': 0.7})
         self.insurance_layout = GridLayout(cols=1, spacing=10, size_hint_y=None)
         self.insurance_layout.bind(minimum_height=self.insurance_layout.setter('height'))
         scroll_view.add_widget(self.insurance_layout)
