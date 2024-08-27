@@ -3,7 +3,7 @@ Here’s the updated README with the image and updated content:
 ---
 
 # Smart Money
-![Smart Money Logo](path/to/your/logo.png)  
+![Smart Money Logo]((https://github.com/Infrixxx/Smart_money/blob/main/smart_money.png))  
 *Be smart with your money*
 
 ## Overview
