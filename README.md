@@ -1,5 +1,5 @@
 
-# Smart Money App Readme 
+# Smart Money App README 
 # Created by BC Rachoshi
 
 ## Overview
