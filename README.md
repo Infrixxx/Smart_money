@@ -36,6 +36,66 @@ This project is a Kivy-based application designed to provide a dynamic and adapt
 **Usage**:
 - This file is imported and used by `main.py` to display the landing page when the application starts.
 
+Here’s a sample README content for `options_screen.py`, explaining the functionality and usage of the `OptionsScreen` class in your Kivy application.
+
+---
+
+# `options_screen.py`
+
+## Overview
+
+The `OptionsScreen` class defines a screen in a Kivy application that provides navigation options for the user. This screen is part of a multi-screen application and allows the user to choose between different functionalities such as Budget, Insurance, Financial Advisors, and Investment.
+
+## Features
+
+- **Background Color**: The background color of the screen is set to white.
+- **Image**: Displays an image at the top of the screen.
+- **Navigation Buttons**: Provides buttons to navigate to different screens.
+- **Back Button**: Allows the user to navigate back to the previous screen.
+
+## Components
+
+### 1. **Background and Layout**
+- The screen uses a `FloatLayout` to manage the position and size of its child widgets.
+- The background color is set to white using Kivy's `Canvas` instructions.
+
+### 2. **Image**
+- An `Image` widget is positioned at the top center of the screen.
+- The image size and position are set using `size_hint` and `pos_hint`.
+
+### 3. **Navigation Buttons**
+- A vertical `BoxLayout` is used to arrange the navigation buttons.
+- Each button is created with a green background and white text.
+- Buttons are used to navigate to different screens: Budget, Insurance, Financial Advisors, and Investment.
+
+### 4. **Back Button**
+- A back button is provided to navigate back to the previous screen (LandingScreen).
+- The button is styled with a green background and white text.
+
+## Class Definition
+
+### `OptionsScreen(Screen)`
+
+#### Initialization (`__init__`)
+- Initializes the `FloatLayout` and sets the background color.
+- Adds an image at the top of the screen.
+- Creates and adds navigation buttons in a vertical layout.
+- Adds a back button at the bottom of the screen.
+
+#### Methods
+
+- **`_update_bg_rect(self, instance, value)`**: Updates the background rectangle size and position when the layout size changes.
+- **`go_to_screen(self, button_text)`**: Navigates to the screen corresponding to the button text.
+- **`go_back(self, instance)`**: Navigates back to the previous screen (LandingScreen).
+
+## Usage
+
+To use `OptionsScreen` in your Kivy application:
+
+1. Import the `OptionsScreen` class in your `main.py` or the script where you manage screen transitions.
+2. Add an instance of `OptionsScreen` to your `ScreenManager`.
+3. Ensure that the `OptionsScreen` is properly connected to your navigation logic.
+
 ## Installation
 
 1. Ensure you have Python and Kivy installed. You can install Kivy using pip:
