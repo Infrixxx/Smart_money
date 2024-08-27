@@ -6,6 +6,7 @@ from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics import Color, Rectangle
 import webbrowser
+from kivy.uix.image import Image
 
 class InvestmentScreen(Screen):
     def __init__(self, **kwargs):
@@ -18,8 +19,11 @@ class InvestmentScreen(Screen):
             self.bg_rect = Rectangle(size=main_layout.size, pos=main_layout.pos)
             main_layout.bind(size=self._update_bg_rect, pos=self._update_bg_rect)
 
-        title_label = Label(text="Investment Platforms", size_hint=(0.9, 0.1), pos_hint={'center_x': 0.5, 'top': 0.95})
-        main_layout.add_widget(title_label)
+        logo = Image(source='smart_money.png', size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5, 'top': 0.95})
+        main_layout.add_widget(logo)
+
+        #title_label = Label(text="Investment Platforms", size_hint=(0.9, 0.1), pos_hint={'center_x': 0.5, 'top': 0.95})
+        #main_layout.add_widget(title_label)
 
         platforms = [
             ("Vanguard", "https://www.vanguard.com"),
