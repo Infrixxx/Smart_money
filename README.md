@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------------------
 # Smart Money
-![Smart Money Logo]![smart_money](https://github.com/user-attachments/assets/03d1a24b-506c-4f5c-9dcb-f3e7cbbe440b)
+[Smart Money Logo]![smart_money](https://github.com/user-attachments/assets/03d1a24b-506c-4f5c-9dcb-f3e7cbbe440b)
   
 *Be smart with your money*
 
